@@ -1,0 +1,46 @@
+<style>
+  article, form {
+    background: #edf6f9;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  article h2 {
+    text-align: center;
+  }
+  form {
+    text-align: center;
+  }
+  .post-wrapper input, .post-wrapper textarea {
+    width: 100%;
+    margin: 5px;
+  }
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background: #83c5be;
+    color: black;
+  }
+</style>
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Post
+  </h2>
+  <form class="post-wrapper">
+    <div>
+      <input name="post-title" type="text" value="{{post.title}}" />
+      <textarea>({{post.post_body}})</textarea>
+    </div>
+    <button type="submit">Save post</button>
+    <button type="button" class="delete-post-btn">Delete post</button>
+  </form>
+</article>
+
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>

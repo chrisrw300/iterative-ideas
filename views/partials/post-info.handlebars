@@ -1,0 +1,19 @@
+<article>
+  <div class="post-div">
+    <div class="post-header">
+        <h3 class="post-title">{{title}}</h3>
+    </div>
+    <div class="post-text">
+      <span>{{post_body}}</span>
+    </div>
+  </div>
+  <div class="container-fluid post-body">
+    <div class="row">
+      <div class="col-12 text-right">
+        created by {{user.username}} on {{format_date created_at}}
+         |
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+      </div>
+    </div>
+  </div>
+</article>

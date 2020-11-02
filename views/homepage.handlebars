@@ -1,0 +1,14 @@
+<div class="blog-header">
+    <h1>
+        Here are the newest posts 
+    </h1>
+</div>
+{{#each posts as |post|}}
+<div class="row">
+        <div class="col-10">
+            <div class="post-wrapper">
+                {{> post-info post }}
+            </div>
+        </div>
+    </div>
+{{/each}}

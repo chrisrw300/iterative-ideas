@@ -1,0 +1,28 @@
+<style>
+  .comment {
+    margin: 10px;
+    border: thin solid #006d77;
+  }
+  .comment-header {
+    color: black;
+    padding: 5px;
+    background: #edf6f9;
+    font-size: 10px;
+  }
+  .comment-text {
+    background: white;
+    padding: 5px 10px;
+  }
+</style>
+<div class="comments">
+  {{#each this}}
+  <section class="comment">
+    <div class="comment-header">
+      {{user.username}} on {{format_date created_at}}
+    </div>
+    <div class="comment-text">
+      {{comment_text}}
+    </div>
+  </section>
+  {{/each}}
+</div>
