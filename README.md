@@ -15,11 +15,11 @@ https://iterative-ideas-blog.herokuapp.com/
 ![image](https://user-images.githubusercontent.com/65309756/97836580-d855ae80-1c99-11eb-865d-a15e51f5c77a.png)
 
 ## Resources Used
-[Node.js](https://nodejs.org/en/)
-[MySQL](https://www.mysql.com/)
-[Sequalize](https://sequelize.org/)
-[Express](https://expressjs.com/)
-[dotenv](https://www.npmjs.com/package/dotenv)
+* [Node.js](https://nodejs.org/en/)
+* [MySQL](https://www.mysql.com/)
+* [Sequalize](https://sequelize.org/)
+* [Express](https://expressjs.com/)
+* [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Installation
 
