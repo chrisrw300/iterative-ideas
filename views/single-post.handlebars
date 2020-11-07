@@ -1,52 +1,11 @@
-<style>
-  .post-wrapper {
-    margin: 10px;
-    border: thin solid #006d77;
-  }
-  .post-title {
-    background: #006d77;
-    color: #edf6f9;
-    padding: 5px;
-  }
-  .post-body {
-    background-color: #edf6f9;
-    padding: 10px;
-  }
-  .post-body a {
-    color: white;
-  }
-  .post-end {
-    padding-top: 10px;
-    margin-bottom: 10px;
-    float: right;
-    font-size: 12px;
-  }
-  .comment {
-    display: block;
-  }
-  .comment-form {
-    margin: 10px;
-    text-align: center;
-  }
-  .comment-form textarea {
-    width: 100%;
-  }
-  .comment-form button {
-    float: right;
-    padding: 5px 10px;
-    border: none;
-    background: #83c5be;
-  }
-</style>
-
-<article class="post-wrapper">
-  <div class="post-title">
-    <h3>{{post.title}}</h3>
+<article class="post-div">
+  <div class="post-header">
+    <h3 class="post-title">{{post.title}}</h3>
   </div>
-  <div class="post-body">
+  <div class="post-text">
     <span>{{post.post_body}}</span>
   </div>
-  <div class="post-end">
+  <div class="post-body">
       Created by {{post.user.username}} on
     {{post.created_at}}
     |
@@ -57,11 +16,13 @@
 
 {{#if loggedIn}}
 <form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
+  <div class="row">
+    <div class="col-6">
+      <textarea name="comment-body"></textarea>
+    </div>
   </div>
   <div class="row">
-    <div class="col-12">
+    <div class="col-6">
           <button type="submit">Add Comment</button>  
     </div>
   </div>

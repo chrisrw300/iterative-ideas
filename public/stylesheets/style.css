@@ -7,6 +7,9 @@
   overflow-x: hidden;
   font-family: 'Fira Sans', sans-serif;;
 }
+body {
+  max-width: 100vw;
+}
 
 /*NAV STYLES*/
 .container-fluid {
@@ -60,11 +63,23 @@ main {
 /*POST STYLES*/
 .post-wrapper {
   width: 75%;
-  margin: 15px 10px;
+}
+.post-title {
+  background: #006d77;
+  color: #edf6f9;
+  padding: 5px;
+}
+.post-end {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  float: right;
+  font-size: 12px;
 }
 .post-div {
   border: thin solid var(--darkgreen);
   border-radius: 10px;
+  margin: 10px;
+  width: 100%;
 }
 .post-header {
   background: var(--darkgreen);
@@ -81,7 +96,7 @@ main {
 }
 .post-body {
   color: black;
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 12px;
 }
 .post-body a {
@@ -91,7 +106,7 @@ main {
   width: 100%;
 }
 .dashboard-post-wrapper {
-  width: 60%;
+  width: 50%;
   margin-right: 10px;
 }
 .edit-text {
@@ -166,8 +181,29 @@ button:hover, button:active, button:focus {
 }
 
 /*COMMENT STYLES*/
-.comments {
-  background: blue;
+.comment {
+  margin: 10px;
+  border: thin solid #006d77;
+}
+.comment-header {
+  color: black;
+  padding: 5px 10px;
+  background: #edf6f9;
+  font-size: 10px;
+}
+.comment-text {
+  background: white;
+  padding: 5px 10px;
+}
+.comment-form textarea {
+  width: 100%;
+  margin: 10px;
+}
+.comment-form button {
+  float: right;
+  padding: 5px 10px;
+  border: none;
+  background: #83c5be;
 }
 
 
